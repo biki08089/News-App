@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Morden News App" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Ashwinee Kumar Sethi" />
+    <title>Latest News Today: Breaking News</title>
+    <!-- custom css  -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- favicon  -->
+    <link
+      rel="shortcut icon"
+      href="/images/fav-icon.webp"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- --------------header-------------- -->
+    <header>
+      <div class="container flex header-container">
+        <img src="/images/logo.png" alt="news-logo" class="logo" />
+        <nav class="navbar">
+          <ul class="navbar-list flex">
+            <li id="business" onclick="navItemClick('business')">
+              <a href="#">Business</a>
+            </li>
+            <li id="technology" onclick="navItemClick('technology')">
+              <a href="#">Technology</a>
+            </li>
+            <li id="entertainment" onclick="navItemClick('entertainment')">
+              <a href="#">Entertainment</a>
+            </li>
+            <li id="ipl" onclick="navItemClick('sports')">
+              <a href="#">Sports</a>
+            </li>
+          </ul>
+        </nav>
+        <form class="search-form flex">
+          <input type="text" placeholder="E.g Sports" class="news-input" />
+          <input type="button" value="Search" class="search-btn" />
+        </form>
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- --------------news display-------------- -->
+    <section style="margin-top: 60px">
+      <div class="container news-container flex"></div>
+    </section>
+
+    <template id="tempplate-news">
+      <div class="container news-container flex">
+        <div class="news-card">
+          <div class="news-header">
+            <img
+              src="https://via.placeholder.com/400x200"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="news-content">
+            <h3 class="news-title" id="news-title">This is the Title</h3>
+            <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+            <p class="news-desc" id="news-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae saepe quis voluptatum quisquam vitae doloremque facilis
+              molestias quae ratione cumque!
+            </p>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <!-- icon cdn -->
+    <script
+      src="https://kit.fontawesome.com/47478b80fe.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js  -->
+    <script src="index.js"></script>
+  </body>
+</html>
